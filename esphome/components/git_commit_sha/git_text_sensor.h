@@ -13,7 +13,7 @@ class GitTextSensor : public text_sensor::TextSensor, public Component {
   void setup() override;
   void dump_config() override;
   float get_setup_priority() const override;
-  std::string unique_id() override;
+  std::string unique_id();
 
   void set_git_commit_sha(std::string git_commit_sha) { this->git_commit_sha_ = git_commit_sha; };
 
