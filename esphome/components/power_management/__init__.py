@@ -3,6 +3,7 @@ import esphome.codegen as cg
 from esphome.components.esp32 import (
     VARIANT_ESP32C6,
     VARIANT_ESP32H2,
+    VARIANT_ESP32S3,
     add_idf_sdkconfig_option,
     only_on_variant,
 )
