@@ -1,6 +1,9 @@
 from esphome import automation
 import esphome.codegen as cg
 from esphome.components.esp32 import (
+    VARIANT_ESP32C6,
+    VARIANT_ESP32H2,
+    VARIANT_ESP32S3,
     add_idf_sdkconfig_option,
 )
 import esphome.config_validation as cv
@@ -59,7 +62,7 @@ CONFIG_SCHEMA = cv.All(
         }
     ).extend(cv.COMPONENT_SCHEMA),
     cv.only_with_esp_idf,
-    only_on_variant(supported=[VARIANT_ESP32C6, VARIANT_ESP32H2]),
+    only_on_variant(supported=[VARIANT_ESP32C6, VARIANT_ESP32H2, VARIANT_ESP32S3]),
 )
 
 
