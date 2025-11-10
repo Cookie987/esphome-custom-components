@@ -5,6 +5,7 @@ from esphome.components.esp32 import (
     VARIANT_ESP32H2,
     VARIANT_ESP32S3,
     add_idf_sdkconfig_option,
+    only_on_variant,
 )
 import esphome.config_validation as cv
 from esphome.const import CONF_ID
