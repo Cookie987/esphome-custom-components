@@ -6,6 +6,8 @@ params:
     description: Instructions for setting up Power Management component.
 ---
 
+source: https://github.com/rwrozelle/esphome/tree/Power-Management-Initial
+
 This is a Prototype Power Management component that enables Power Management and also provided methods for acquiring and releasing Locks
 
 [esp-idf Power Management] (https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/power_management.html)
